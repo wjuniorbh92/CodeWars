@@ -6,7 +6,6 @@ function comp(array1, array2) {
   array2.sort((a, b) => a - b);
   return array1
     .map((i) => {
-      console.log(i * i);
       return i * i;
     })
     .every((val, i) => val === array2[i]);
