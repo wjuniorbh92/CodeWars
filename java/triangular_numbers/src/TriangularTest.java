@@ -1,2 +1,16 @@
-package PACKAGE_NAME;public class TriangularTest {
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
+public class TriangularTest
+{
+    Triangular triangular = new Triangular();
+    @Test
+    public void TriangularTests()
+    {
+        assertEquals(true, triangular.isTriangular(6));
+    }
+
 }
+
+
